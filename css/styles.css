@@ -33,7 +33,7 @@ header
 .momento{
 	position: relative;
   display: inline-block;
-  right: 150px;
+  right: 125px;
   /*margin-left: auto;
   margin-right: auto;*/
 }
@@ -337,7 +337,7 @@ label{
   position: fixed;
   width: 25px;
   height: 25px;
-  bottom: 50px;
+  bottom: 75px;
   left: 30px;
 }
 #scroll_to_top img {
