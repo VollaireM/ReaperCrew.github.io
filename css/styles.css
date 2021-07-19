@@ -15,8 +15,8 @@ p{
 
 .logo img
 {
-	width: 200px;
-	height: 200px;
+	width: 180px;
+   height: 190px;
 }
 
 header
@@ -25,7 +25,47 @@ header
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: rgba(0, 0, 0, 1.0);
+   color: white;
+   border-radius: 10px;
 }
+
+.momento{
+	position: relative;
+  display: inline-block;
+  right: 150px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+.drop{
+	background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.menu{
+	display: none;
+  	position: absolute;
+  	background-color: #f1f1f1;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.menu a{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header div button div a {display: none;}
+.menu a:hover {background-color: #ddd;}
+.momento:hover .menu {display: block;}
+.momento:hover .drop {background-color: #3e8e41;}
 
 /*p{
 	font-size: 3vm;
@@ -38,7 +78,13 @@ header
 	display: flex;
 }
 
-nav{
+nav .couille{
+	position: sticky;
+	display: flex;
+	top: 0px;
+}
+
+nav .documents{
 	display: block;
     /* background-color: black; */
     color: blue;
@@ -52,12 +98,18 @@ nav{
     /* padding-top: 100px;*/
 }
 
+section nav p a:hover{
+	background-color: #3498DB;
+	color: white;
+}
+
 .menu{
-	display: block;
-    font-size: 2vm;
-    margin: auto;
-    border: 2px ridge;
-    border-color: black;
+	/*display: block;*/
+   font-size: 2vm;
+   margin: auto;
+   border: 2px ridge;
+   border-color: black;
+   border-radius: 10px;
 }
 
 .menu a{
@@ -70,6 +122,7 @@ nav{
 	margin: auto;
 	font: inherit;
 	font-size: 2vm;
+	border-radius: 10px;
 	/*width: 70px;*/
 }
 
@@ -111,13 +164,14 @@ nav{
 .galeriePhoto
 {
 	display: flex;
-    align-items: center;
-    align-content: center;
+   align-items: center;
+   align-content: center;
+    /*width: calc(500px * 3);*/
 }
 
-.slide
+.slides
 {
-
+	float: left;
 }
 
 #diaporama
@@ -126,11 +180,16 @@ nav{
     overflow: auto;
     align-items: center;
     align-content: center;
-    background-color: black;
+    /*background-color: black;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
+/*.diaporama{
+	width: 500px;
+	overflow: hidden;
+}*/
 
 .infos_partie{
 	display: block;
@@ -149,7 +208,9 @@ nav{
 }
 
 .texte{
-	background-color: white;
+	/*background-color: white;*/
+	background-color: #7B7D7D;
+	background-color: rgba(255,250,255,0.8);
 }
 
 .texte p{
@@ -196,6 +257,7 @@ footer
     background-color: black;
     border-width: 5px;
     border-color: black;
+    border-radius: 10px;
 }
 
 h1{
@@ -216,7 +278,7 @@ h1{
     /* margin-left: 5px; */
     /* margin-right: 5px; */
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 15px;
     align-items: center;
     align-content: center;
     padding-top: 5px;
@@ -258,9 +320,10 @@ label{
    top: 150px;
    right: 0;
    width: 60px;
-   background: #333;
+   background: #697e93;
    z-index: 80;
    width: 85px;
+   padding: 5px;
 }
 
 @media only screen and (max-width: 1050px)
@@ -277,6 +340,11 @@ label{
   left: 30px;
 }
 #scroll_to_top img {
-	width: 50px;
-  	border-radius: 10px;
+	width: 65px;
+  	border-radius: 50px;
 }
+
+section .foute{
+	border-radius: 10px;
+}
+
